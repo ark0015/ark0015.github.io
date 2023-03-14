@@ -23,11 +23,13 @@
 					<h1><strong>Andrew Kaiser</strong></h1>
 					<p>Physics PhD. Candidate at West Virginia University<br />
 					Gravitational Wave Astrophysicist, Avid Learner, Python Enthusiast</p>
-					<!--
 					<ul class="actions special">
+						<!--
 						<li><a href="#one" class="button scrolly">About Me</a></li>
+						-->
+						<li><a href="#two" class="button scrolly">Interest and Hobbies</a></li>
+						<li><a href="#three" class="button scrolly">Research and Projects</a></li>
 					</ul>
-					-->
 				</div>
 			</section>
 
@@ -120,6 +122,51 @@
 							<ul class="actions special">
 								<li><a href="https://github.com/ark0015/MovieNight" class="button">More</a></li>
 							</ul>
+						</div>
+					</div>
+					<div class="row gtr-1500 aln-center">
+						<header class="major">
+							<h2>Visualizing Pulsars</h2>
+							<p>Pulsars are rapidly rotating neutron stars with extremely strong electromagnetic fields. The strong fields produce a cone of emission that beams light into the Universe much like a lighthouse. To help visualize (or more accurately, auralize) how rapidly these pulsars rotate, I used their rotation frequency as an audible note converted through the Python package Pyo. All of these sounds and images were made entirely in Python by me.</p>
+						</header>
+						<div class="col-6 col-12-medium">
+							<h3>Pulsar Frequencies</h3>
+							<video width="100%" height="50%" controls>
+								<source src="images/pulsar_music.mp4" type="video/mp4">
+								The fundamental rotation frequencies of pulsars from NANOGrav's 12.5 year dataset played at their respective frequencies.
+							</video> 
+							<p>Pulsars rotate at a fundamental frequency, these happen to be in the human range of sound. This visualization plays the respective frequencies for all of the pulsars in NANOGrav's 12.5-year data release.</p>
+						</div>
+						<div class="col-6 col-12-medium">
+							<h3>Binary Pulsars</h3>
+							<video width="100%" height="50%" controls>
+								<source src="images/binary_music.mp4" type="video/mp4">
+								The binary pulsars from NANOGrav's 12.5 year dataset rotating at their binary periods at the distance from their companions and playing their respective fundamental frequencies every complete rotation.
+							</video>
+							<p>Many binaries in PTA datasets have a binary companion. Here I combined each pulsar's rotation frequency with information about the binary system's orbital period (how long it takes for a full revolution of the pair of stars), and the distance the pulsar is from its companion at closest approach. In the visualization, the pulsar chimes at its rotation frequency every full orbit with its companion and is displayed at its distance from its companion in light-seconds on a logarithmic scale. For reference, Earth is about 500 light-seconds from the Sun and about 1.3 light-seconds from the Moon.</p>
+						</div>
+					</div>
+					<div class="row gtr-0 aln-center">
+						<header class="major">
+							<h2>Pulsars in the Milky Way</h2>
+							<p>Pulsars can be found throughout the Galaxy. Wherever massive stars die, there will be pulsars. Unfortunately for us, we are kind of stuck in a particular portion of the Milky Way, in a somewhat backwater district. Pulsars are mostly observed in radio frequencies, these can be pretty weak signals and take very specialize telescopes to observe them. For scale, pulsars are measured in Jansky's (in honor of Karl Jansky, the person who discovered natural radio emission from our Galaxy) and often milli-Jansky's, while a cellphone at a kilometer away emits about 110 million Jansky's. So we tend to only find these weak signals in our local region. </p>
+						</header>
+						<div class="col-6 col-12-medium">
+							<h3>Music Through Pulsars: Classical Notes</h3>
+							<video width="100%" height="50%" controls>
+								<source src="images/st_video_2.mp4" type="video/mp4">
+								A selection of pulsars from NANOGrav's 12.5 year dataset playing the nearest note frequency to their respective fundamental frequencies to the tune of the Star Trek: The Next Generation Theme.
+							</video>
+							<p>Pulsars are found distributed all around us in the Milky Way. This visualization shows the position relative to our solar system on the night sky and in the plane of the Milky Way of a selection of pulsars from NANOGrav's 12.5 year dataset that have the nearest frequencies to our typical scale of notes used in music. I then use these nearest notes in a transcribed (by me) version of the theme from Star Trek: The Next Generation. </p>
+						</div>
+						<div class="col-6 col-12-medium">
+							<!--<span class="image fit"><img src="images/pexels-cottonbro-3692625.jpg" alt="" /></span>-->
+							<h3>Music Through Pulsars: Pulsar Notes</h3>
+							<video width="100%" height="50%" controls>
+								<source src="images/st_video_pulsar_freqs_2.mp4" type="video/mp4">
+								A selection of pulsars from NANOGrav's 12.5 year dataset playing the their respective fundamental frequencies to the tune of the Star Trek: The Next Generation Theme.
+							</video>
+							<p>This visualization is the same as its partner, but instead of converting the pulsar frequencies to notes, I simply used the rotational frequencies of the pulsars. As you can hear, they are not quite in tune.</p>
 						</div>
 					</div>
 				</div>
